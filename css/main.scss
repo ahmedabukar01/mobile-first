@@ -74,3 +74,55 @@ nav{
         margin:auto;
     }
 }
+
+section.features{
+    background:#20272E;
+    padding:5em 2em;
+    
+    .features-left{
+        li{
+            font-size:1.1em;
+            color:#fff;
+            margin-bottom:1em;
+            margin-left:2em;
+            position:relative;
+        }
+        li::before{
+            content:'';
+            position:absolute;
+            left:-2em;
+            width:20px;
+            height:20px;
+            background-image:url(../images/bullet.svg);
+            background-size:contain;
+            margin-right:.5em;
+        }
+    }
+    .features-right{
+        display:none;
+    }
+}
+section.testimonials{
+    padding:5em 2em;
+    background:var(--primary-color);
+    li{
+        background:#006BD6;
+        text-align:center;
+        margin:0 auto 5em auto;
+        padding:2em 1em;
+        border-radius:1em;
+        blockquote{
+            color:#fff;
+            font-size: 1.3em;
+        }
+        cite{
+            color:#fff;
+        }
+        img{
+            width:5em;
+            margin-top:-4.5em;
+            border:5px solid #006bd6;
+            border-radius:50%;
+        }
+    }
+}

@@ -89,4 +89,61 @@ nav {
   width: 70%;
   margin: auto;
 }
+
+section.features {
+  background: #20272E;
+  padding: 5em 2em;
+}
+
+section.features .features-left li {
+  font-size: 1.1em;
+  color: #fff;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+section.features .features-left li::before {
+  content: '';
+  position: absolute;
+  left: -2em;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/bullet.svg);
+  background-size: contain;
+  margin-right: .5em;
+}
+
+section.features .features-right {
+  display: none;
+}
+
+section.testimonials {
+  padding: 5em 2em;
+  background: var(--primary-color);
+}
+
+section.testimonials li {
+  background: #006BD6;
+  text-align: center;
+  margin: 0 auto 5em auto;
+  padding: 2em 1em;
+  border-radius: 1em;
+}
+
+section.testimonials li blockquote {
+  color: #fff;
+  font-size: 1.3em;
+}
+
+section.testimonials li cite {
+  color: #fff;
+}
+
+section.testimonials li img {
+  width: 5em;
+  margin-top: -4.5em;
+  border: 5px solid #006bd6;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=main.css.map */
