@@ -146,4 +146,45 @@ section.testimonials li img {
   border: 5px solid #006bd6;
   border-radius: 50%;
 }
+
+section.contact-section .container {
+  padding: 5em 2em;
+}
+
+section.contact-section .container .contact h1 {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+}
+
+section.contact-section .container .contact label {
+  display: block;
+  font-size: 1.3em;
+  margin-bottom: .5em;
+}
+
+section.contact-section .container .contact input, section.contact-section .container .contact textarea {
+  padding: .8em;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: .3em;
+  margin-bottom: 1em;
+}
+
+section.contact-section .container .contact input[type="submit"] {
+  background: var(--primary-color);
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: .8em 2em;
+  border: none;
+  border-radius: 5em;
+  width: unset;
+  margin-bottom: 5em;
+}
+
+section.contact-section .container .contact iframe {
+  width: 100%;
+  height: 300px;
+}
 /*# sourceMappingURL=main.css.map */
