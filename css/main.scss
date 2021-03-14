@@ -34,7 +34,7 @@ nav{
         color:var(--primary-color);
     }
 }
-.showcase .container{
+section.showcase .container{
     padding: 80px 20px;
     background:#f3f1fd;
     text-align:center;
@@ -80,6 +80,10 @@ section.features{
     padding:5em 2em;
     
     .features-left{
+        ul{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(19em, 1fr));
+        }
         li{
             font-size:1.1em;
             color:#fff;
@@ -174,7 +178,7 @@ nav{
     top:0;
     height:100vh;
     padding:1em;
-    .menu-bar{
+    .primary-menu{
         margin-top:4em;
     }
     li{
@@ -196,4 +200,72 @@ nav{
 }
 nav.menu-btn{
     display:block;
+}
+
+/* responsive */
+@media only screen and (min-width:768px){
+    #show-bar,#exit-bar{
+        display:none;
+    }
+    .nav .container{
+        display:grid;
+        grid-template-columns:180px auto;
+        justify-content: unset;
+        align-items:center;
+    } 
+    .nav nav{
+        display:flex;
+        justify-content: space-between;
+        position:unset;
+        width:100%;
+        background:none;
+        height: auto;
+        padding:0;
+        ul{
+            display:flex;
+        }
+        ul.primary-menu{
+            margin:0;
+        }
+        a{
+            color:black;
+            font-size:1em;
+            padding:.1em 1em;
+        }
+        li.current a{
+            font-weight: bold;
+        }
+        li.go-pre a{
+            color:var(--primary-color);
+            border:3px solid var(--primary-color);
+            border-radius:5em;
+            font-weight: bold;
+            margin-top:-.2em;
+            &:hover{
+                background:var(--primary-color);
+                color:#fff;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width:1080px){
+    .container{
+        width:1080px;
+        margin:0 auto;
+    }
+    section{
+        padding:10em 4em;
+    }
+    section.showcase{
+        padding:0;
+    }
+    section.showcase .container{
+        display:flex;
+        padding:10em 4em;
+        margin:0;
+        justify-content:space-between;
+    }
 }
