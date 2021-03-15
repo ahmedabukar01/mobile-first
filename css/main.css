@@ -45,9 +45,12 @@ nav {
   color: var(--primary-color);
 }
 
+section.showcase {
+  background: #f3f1fd;
+}
+
 section.showcase .container {
   padding: 80px 20px;
-  background: #f3f1fd;
   text-align: center;
 }
 
@@ -300,6 +303,16 @@ nav.menu-btn {
   section {
     padding: 10em 4em;
   }
+  .nav .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .nav .container .logo {
+    font-size: 1.4em;
+  }
+  .nav .container ul {
+    font-size: 1.2em;
+  }
   section.showcase {
     padding: 0;
   }
@@ -308,7 +321,7 @@ nav.menu-btn {
     display: -ms-flexbox;
     display: flex;
     padding: 10em 4em;
-    margin: 0;
+    width: 1080px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
