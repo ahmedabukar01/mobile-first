@@ -124,7 +124,7 @@ section.features .features-left li::before {
   margin-right: .5em;
 }
 
-section.features .features-right {
+section.features img {
   display: none;
 }
 
@@ -325,6 +325,85 @@ nav.menu-btn {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  section.showcase .container .left-side {
+    text-align: left;
+    padding: 2em;
+  }
+  section.showcase .container .left-side h1 {
+    font-size: 3.3em;
+  }
+  section.showcase .container .left-side .un {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.showcase .container .left-side .un .watch {
+    margin-left: 1.5em;
+  }
+  section.showcase .container .illustration {
+    width: unset;
+  }
+  section.features {
+    position: relative;
+  }
+  section.features .features-left ul {
+    display: block;
+    margin-left: 4em;
+  }
+  section.features img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -3em;
+  }
+  section.testimonials ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.testimonials ul li {
+    margin: 0 1em;
+  }
+  section.contact-section {
+    position: relative;
+  }
+  section.contact-section .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.contact-section .contact .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  section.contact-section .contact .contact-right iframe {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  section.features .features-left ul::before {
+    content: '';
+    width: 10%;
+    height: 300px;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: -4em;
+  }
+  section.features .features-left ul::after {
+    content: '';
+    width: 200px;
+    height: 20em;
+    background: url(../images/dots.svg) no-repeat;
+    position: absolute;
+    left: 3.8em;
+    top: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -105,7 +105,7 @@ section.features{
             margin-right:.5em;
         }
     }
-    .features-right{
+    img{
         display:none;
     }
 }
@@ -281,6 +281,92 @@ nav.menu-btn{
         padding:10em 4em;
         width:1080px;
         justify-content:space-between;
+        .left-side{
+            text-align:left;
+            padding:2em;
+            h1{
+                font-size:3.3em;
+            }
+            .un{
+                display:flex;
+                .watch{
+                    margin-left:1.5em;
+                }
+            }
+
+            
+        }
+        .illustration{
+            width:unset;
+        }
+    }
+    section.features{
+        position:relative;
+        .features-left{
+            ul{
+                display:block;
+                margin-left:4em;
+            }
+        }
+        img{
+            display:block;
+            position:absolute;
+            right:0;
+            width:350px;
+            bottom:-3em;
+        }
+    }
+    section.testimonials{
+        ul{
+            display:flex;
+            li{
+                margin:0 1em;
+            }
+        }
+    }
+    section.contact-section{
+        position:relative;
+        .contact{
+            display:flex;
+            .contact-right{
+                position:absolute;
+                right:0;
+                top:0;
+                width:45%;
+                height:100%;
+                iframe{
+                    height:100%;
+                }
+            }
+        }
+        
+        
     }
    
+}
+@media only screen and (min-width:1450px){
+    section.features{
+        .features-left{
+            ul{
+                &::before{
+                    content:'';
+                    width:10%;
+                    height:300px;
+                    background:var(--primary-color);
+                    position:absolute;
+                    left:0;
+                    top:-4em;;
+                }
+                &::after{
+                    content:'';
+                    width:200px;
+                    height:20em;
+                    background:url(../images/dots.svg) no-repeat;
+                    position:absolute;
+                    left:3.8em;
+                    top:2em;;
+                }
+            }
+        }
+    }
 }
